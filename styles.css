@@ -1,0 +1,30 @@
+#heading {
+    padding-top: 40px;
+    padding-bottom: 70px;
+}
+
+#projects {
+    margin-top: 0px;
+}
+
+#projectdesc {
+    padding-top: 25px;
+}
+
+#projecttags {
+    padding-top: 0px;
+}
+
+#contact, a {
+    padding-top: 5px;
+    color: grey;
+}
+
+a:hover {
+    color: black;
+}
+
+#preview {
+    height:400px;
+    overflow: hidden;
+}
