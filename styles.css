@@ -1,6 +1,6 @@
 #heading {
-    padding-top: 40px;
-    padding-bottom: 70px;
+    padding-top: 0px;
+    padding-bottom: 30px;
 }
 
 #projects {
@@ -8,23 +8,35 @@
 }
 
 #projectdesc {
-    padding-top: 25px;
+    padding-top: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
-#projecttags {
-    padding-top: 0px;
+#projectheader {
+    padding-bottom: -5px;
 }
 
-#contact, a {
-    padding-top: 5px;
+#projecttag {
+    margin-bottom: 5px;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+#projectpreview {
+    max-height:500px;
+    overflow: hidden;
+}
+
+#headercontacts {
+    padding-top: 20px;
+    margin-bottom: -10px;
+    width: 100%;
+}
+a {
     color: grey;
 }
 
 a:hover {
     color: black;
-}
-
-#preview {
-    height:400px;
-    overflow: hidden;
 }
