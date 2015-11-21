@@ -1,6 +1,3 @@
-// dim cards on mouse hover
-$('.special.cards .image').dimmer({ on: 'hover' });
-
 function resizePage() {
     // change format for mobile
     if ($(this).width() < 640) {
@@ -26,6 +23,19 @@ function resizePage() {
 
 function init() {
     resizePage();
+
+    // dim cards on mouse hover
+    $('.special.cards .image').dimmer({ on: 'hover' });
+
+    // laod images then fade in
+    $('#projectpreview').each(function(){
+        $(this).attr('src', $(this).attr('data-delayedsrc')).load(function() {
+            $('.ui.active.loader').prev().remove();
+            $(this).prev().prev().fadeOut();
+            $(this).prev().prev().prev().remove();  // this is a temp div used to expand the card
+            $(this).fadeIn(1000);
+        }); 
+    });
 }
 
 window.onload = init;

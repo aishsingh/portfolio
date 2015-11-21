@@ -3,10 +3,6 @@
     padding-bottom: 30px;
 }
 
-#projects {
-    margin-top: 0px;
-}
-
 #projectdesc {
     padding-top: 3%;
     padding-left: 3%;
@@ -25,7 +21,10 @@
 
 #projectpreview {
     max-height:500px;
+    margin-bottom: -5px;
     overflow: hidden;
+    display: none;
+    background-color: white;
 }
 
 #headercontacts {
@@ -33,10 +32,15 @@
     margin-bottom: -10px;
     width: 100%;
 }
+
 a {
     color: grey;
 }
-
 a:hover {
     color: black;
+}
+
+#tempexpand {
+    height: 100px;
+    visibility: hidden;
 }
