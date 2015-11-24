@@ -8,6 +8,10 @@ function resizePage() {
              <a href='http://stackoverflow.com/users/3270542/aish'><i class='stack overflow icon'></i></a>";
 
          $("#headercontacts").css("text-align", "center");
+
+         $('#awards').each(function(){
+             $(this).html("<i class='trophy icon'></i> x1");
+         });
     }
     else {
         document.getElementById("headercontacts").innerHTML =
@@ -18,6 +22,10 @@ function resizePage() {
              <a href='http://stackoverflow.com/users/3270542/aish'><i class='stack overflow icon'></i></a>";
 
          $("#headercontacts").css("text-align", "right");
+
+         $('#awards').each(function(){
+             $(this).html("<i class='trophy icon'></i> " + "Victorian Government Data Challenge Winner");
+         });
     }
 }
 
@@ -27,14 +35,18 @@ function init() {
     // dim cards on mouse hover
     $('.special.cards .image').dimmer({ on: 'hover' });
 
-    // laod images then fade in
-    $('#projectpreview').each(function(){
-        $(this).attr('src', $(this).attr('data-delayedsrc')).load(function() {
-            $('.ui.active.loader').prev().remove();
-            $(this).prev().prev().fadeOut();
-            $(this).prev().prev().prev().remove();  // this is a temp div used to expand the card
-            $(this).fadeIn(1000);
-        }); 
+    // preload images then fade in
+    $('img#tempexpand').each(function(){
+        var preview = $(this).next().next().next();
+        var loader = $(this).next();
+        $(this).attr('src', preview.attr('data-delayedsrc')).load(function() {
+            // preview.css('background', 'url('+ preview.attr('data-delayedsrc') + ') center center');
+            preview.attr('src', preview.attr('data-delayedsrc'));
+            loader.fadeOut();
+            loader.remove();
+            $(this).remove();
+            preview.fadeIn(1000);
+        });
     });
 }
 

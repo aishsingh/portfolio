@@ -1,43 +1,44 @@
+a {
+    color: grey;
+}
+a:hover {
+    color: black;
+}
+
 #heading {
     padding-top: 0px;
     padding-bottom: 30px;
 }
-
-#projectdesc {
-    padding-top: 3%;
-    padding-left: 3%;
-    padding-right: 3%;
-}
-
-#projectheader {
-    padding-bottom: -5px;
-}
-
-#projecttag {
-    margin-bottom: 5px;
-    margin-left: 1px;
-    margin-right: 1px;
-}
-
-#projectpreview {
-    max-height:500px;
-    margin-bottom: -5px;
-    overflow: hidden;
-    display: none;
-    background-color: white;
-}
-
 #headercontacts {
     padding-top: 20px;
     margin-bottom: -10px;
     width: 100%;
 }
 
-a {
-    color: grey;
+#project {
+    text-align: left;
 }
-a:hover {
-    color: black;
+#projectheader {
+    padding-bottom: 0px;
+}
+#projecttag {
+    margin-bottom: 1px;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+#projectpreview {
+    margin-bottom: -5px;
+    overflow: hidden;
+    display: none;
+}
+#projectlink {
+    width: 100%;
+    padding-bottom: 0px;
+}
+#projectdesc {
+    padding-top: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
 #tempexpand {
