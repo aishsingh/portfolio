@@ -2,9 +2,9 @@ function resizePage() {
     // change format for mobile
     if ($(this).width() < 640) {
         document.getElementById("headercontacts").innerHTML = 
-            "<a href='mailto:contact@aishsingh.io'><i class='at icon'></i></a> \
+            "<a href='mailto:contact@aishsingh.com'><i class='at icon'></i></a> \
+             <a href='http://twitter.com/aishsingh_'><i class='twitter icon'></i></a> \
              <a href='http://github.com/aishsingh'><i class='github icon'></i></a> \
-             <a href='http://bitbucket.com/aishsingh'><i class='bitbucket icon'></i></a> \
              <a href='http://stackoverflow.com/users/3270542/aish'><i class='stack overflow icon'></i></a>";
 
          $("#headercontacts").css("text-align", "center");
@@ -15,10 +15,10 @@ function resizePage() {
     }
     else {
         document.getElementById("headercontacts").innerHTML =
-            "<a href='mailto:contact@aishsingh.io'><small>contact@aishsingh.io</small></a> \
+            "<a href='mailto:contact@aishsingh.com'><small>contact@aishsingh.com</small></a> \
              <br/> \
+             <a href='http://twitter.com/aishsingh_'><i class='twitter icon'></i></a> \
              <a href='http://github.com/aishsingh'><i class='github icon'></i></a> \
-             <a href='http://bitbucket.com/aishsingh'><i class='bitbucket icon'></i></a> \
              <a href='http://stackoverflow.com/users/3270542/aish'><i class='stack overflow icon'></i></a>";
 
          $("#headercontacts").css("text-align", "right");
