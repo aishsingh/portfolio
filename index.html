@@ -5,171 +5,50 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-  <title>Projects & Experiments</title>
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <title>Aishwarya Singh</title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
   <!-- JQuery -->
-  <script src="jquery-1.11.3.min.js"></script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
 
   <!-- Semantic UI -->
-  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
-  <script src="semantic/dist/semantic.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="bower_components/semantic/dist/semantic.min.css">
+  <script src="bower_components/semantic/dist/semantic.min.js"></script>
 
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <script src="script.js" type="text/javascript"></script>
+  <!-- ProcessingJS -->
+  <script src="bower_components/Processing.js/processing.min.js"></script>
+
+  <!-- Google Fonts API -->
+  <link href='https://fonts.googleapis.com/css?family=Montserrat+Alternates' rel='stylesheet' type='text/css'>
+
+  <!-- Rainbow JS -->
+  <link rel="stylesheet" type="text/css" href="bower_components/rainbow/themes/tricolore.css">
+
+  <link rel="stylesheet" type="text/css" href="/styles.css">
+  <!-- <script src="/global.js" type="text/javascript"></script> -->
 </head>
-
 <body>
-  <div class="ui center aligned container grid">
-    <div id="headercontacts" class="ui large header">
-      <a href="mailto:contact@aishsingh.com">
-        <small>contact@aishsingh.com</small>
-      </a>
-      <br/>
-      <a href="http://github.com/aishsingh">
-        <i class="github icon"></i>
-      </a>
-      <a href="http://twitter.com/aishsingh_">
-        <i class="twitter icon"></i>
-      </a>
-      <a href="http://stackoverflow.com/users/3270542/aish">
-        <i class="stack overflow icon"></i>
-      </a>
-    </div>
 
-    <h1 id="heading" class="ui header center aligned">
-      <big>
-        Aishwarya Singh
-        <div class="sub header">
-            <div class="ui horizontal fitted divider">
-                <big>Projects &amp; Experiments</big>
-            </div>
-        </div>
-      </big>
+  <div class="ui right aligned container">
+    <br/>
+    <h1 id="logo">
+      aishwarya singh
     </h1>
+    <br/>
+
+    <div id="msg">
+      <strong>Melbourne, Australia</strong>
+      <br/>
+      <strong>Some of my <u>ideas</u> and <u>creations</u>.</strong>
+    </div>
   </div>
 
-  <div class="ui stackable special cards">
-    <div id="project" class="ui centered card container grid">
-      <div class="content">
-        <div id="projectheader" class="ui header">
-          <big>Plan My Ride</big>
-          <div class="meta right floated">
-            <small>Aug 2015</small>
-          </div>
-        </div>
+  <!-- Rainbow JS -->
+  <script src="bower_components/rainbow/js/rainbow.min.js"></script>
+  <script src="bower_components/rainbow/js/language/generic.js"></script>
 
-        <div class="meta">
-          <a id="projecttag" class="ui basic label">GoogleMaps JS</a>
-          <a id="projecttag" class="ui basic label">FullPage JS</a>
-          <a id="projecttag" class="ui grey label">Hackathon</a>
-        </div>
-
-      </div>
-
-      <div class="blurring dimmable image center">
-        <img id="tempexpand"/>
-        <div class="ui active loader"></div>
-        <div class="ui dimmer">
-          <div class="content">
-            <div class="center">
-              <a href="https://github.com/pranay-91/PlanMyRide">
-                <div class="ui teal vertical animated button" tabindex="0">
-                  <div class="visible content">
-                    <i class="github icon"></i>
-                    Github
-                  </div>
-                  <div class="hidden content">
-                    View Code
-                  </div>
-                </div>
-              </a>
-              <a href="planmyride">
-                <div class="ui teal vertical animated button" tabindex="0">
-                  <div class="visible content">
-                    <i class="lab icon"></i>
-                    Demo
-                  </div>
-                  <div class="hidden content">
-                    Run
-                  </div>
-                </div>
-              </a>
-
-              <div id="projectdesc">
-                <p><big>A journey planner for cyclists and tourists, created at Monash University's Unihack 2015</big></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <img id="projectpreview" data-delayedsrc="images/screen_planmyride_2.png"/>
-      </div>
-    </div>
-
-    <div id="project" class="ui centered card container grid">
-      <div class="content">
-        <div id="projectheader" class="ui header">
-          <big>Path To Safety</big>
-          <div class="meta right floated">
-            <small>Jul 2015</small>
-          </div>
-        </div>
-
-        <div class="meta">
-          <a id="projecttag" class="ui basic label">CartoDB JS</a>
-          <a id="projecttag" class="ui basic label">Bootstrap JS</a>
-          <a id="projecttag" class="ui grey label">Hackathon</a>
-          <a id="awards" class="ui yellow label right floated">
-              <i class="trophy icon"></i>
-              Victorian Government Data Challenge Winner
-          </a>
-        </div>
-
-      </div>
-
-      <div class="blurring dimmable image center">
-        <img id="tempexpand"/>
-        <div class="ui active loader"></div>
-        <div class="ui dimmer">
-          <div class="content">
-            <div class="center">
-              <a id="projectlink" href="https://github.com/dziemid/govhack_melb_2015_backtosafety">
-                <div class="ui teal vertical animated button" tabindex="0">
-                  <div class="visible content">
-                    <i class="github icon"></i>
-                    Github
-                  </div>
-                  <div class="hidden content">
-                    View Code
-                  </div>
-                </div>
-              </a>
-              <a id="projectlink" href="pathtosafety">
-                <div class="ui teal vertical animated button" tabindex="0">
-                  <div class="visible content">
-                    <i class="lab icon"></i>
-                    Demo
-                  </div>
-                  <div class="hidden content">
-                    Run
-                  </div>
-                </div>
-              </a>
-
-              <div id="projectdesc">
-                  <p><big>A tool for Melbourne's pedestrians to find the safest routes late in the CBD, created at GovHack 2015</big></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <img id="projectpreview" data-delayedsrc="images/screen_pathtosafety_1.png"/>
-      </div>
-    </div>
-
-  </div>
-
-
+  <!-- Google Analytics -->
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

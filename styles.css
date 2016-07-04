@@ -1,47 +1,24 @@
-a {
-    color: grey;
+body {
+    background-color: white;
 }
-a:hover {
+
+#logo {
+    color: #555;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 60px;
+    padding: 0px;
+}
+
+#msg {
+    color: #555;
+    padding: 0px;
+    font-size: 25px;
+}
+
+#msg u {
+    color: #555;
+}
+#msg u:hover {
     color: black;
-}
-
-#heading {
-    padding-top: 0px;
-    padding-bottom: 30px;
-}
-#headercontacts {
-    padding-top: 20px;
-    margin-bottom: -10px;
-    width: 100%;
-}
-
-#project {
-    text-align: left;
-}
-#projectheader {
-    padding-bottom: 0px;
-}
-#projecttag {
-    margin-bottom: 1px;
-    margin-left: 1px;
-    margin-right: 1px;
-}
-#projectpreview {
-    margin-bottom: -5px;
-    overflow: hidden;
-    display: none;
-}
-#projectlink {
-    width: 100%;
-    padding-bottom: 0px;
-}
-#projectdesc {
-    padding-top: 3%;
-    padding-left: 3%;
-    padding-right: 3%;
-}
-
-#tempexpand {
-    height: 100px;
-    visibility: hidden;
+    font-size: 30px;
 }

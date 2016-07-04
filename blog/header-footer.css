@@ -1,0 +1,50 @@
+body {
+    background-color: white;
+}
+
+#header {
+    background-color: #666; //#54d1e9;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    padding-right: 5px;
+    text-align: left;
+}
+
+#header-bg {
+    background-color: #666; //#54d1e9;
+    padding-top: 5px;
+    padding-bottom: 70px;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+#header-logo {
+    position: absolute;
+    padding-bottom: 0px;
+    color: white;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 50px;
+}
+
+#header-contacts {
+    margin-top: 15px;
+    color: white;
+    text-align: right;
+}
+#header-contacts a {
+    color: white;
+}
+#header-contacts a:hover {
+    font-size: 32px;
+}
+
+#footer-bg {
+    /* background-color: #666; //#54d1e9; */
+    margin-top: 40px;
+    padding-bottom: 20px;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    text-align: center;
+}
